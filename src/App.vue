@@ -1,14 +1,15 @@
 <template>
   <h1>Reaction Timer</h1>
   <button @click="start">Play</button>
+  <Block :delay="delay"/>
 </template>
 
 <script>
-
-
+import Block from "./components/Block.vue"
 export default {
   name: 'App',
   components: {
+    Block
   },
   data(){
     return {
